@@ -32,11 +32,11 @@ These comma-separated values (CSV) files are available for download, with the fo
 * `id`: Postal abbreviations for states, territories and vaccination jurisdictions (full list available [here](https://faq.usps.com/s/article/What-are-the-USPS-abbreviations-for-U-S-states-and-territories)). Cities and federal entities are given non-standard identifiers, e.g. “new-york-city”.
 * `population`: Population estimates as of July 1, 2019 from the [U.S. Census](https://www.census.gov/data/tables/time-series/demo/popest/2010s-state-total.html) for the U.S. and Puerto Rico. 2018 U.S. Census Bureau estimates and estimates from the CIA Factbook are used for other U.S. territories and Micronesia, Palau and the Marshall Islands.
 * `name`: State, territory, city or vaccination jurisdiction name.
-* `dosesAdministered`: Cumulative number of doses administered. This is the administration data published on our website. Prior to Feb. 20, it includes the most up-to-date figures drawn from the CDC and from state-run dashboards—whichever value is higher; CDC data is used moving forward.
-* `peopleVaccinated`: Cumulative number of people who’ve received at least one dose. (Note: if higher than the CDC number prior to Feb. 20, state-reported data is used.)
-* `completedVaccination`: Cumulative number of people who’ve been fully vaccinated. (Notes: if higher than the CDC number prior to Feb. 20, state-reported data is used, and the first-approved vaccines require two doses for full vaccination or “series completion”.)
+* `dosesAdministered`: Cumulative number of doses administered in a state, regardless of residency. This is the administration data published on our website. Prior to Feb. 20, it includes the most up-to-date figures drawn from the CDC and from state-run dashboards—whichever value is higher; CDC data, which includes doses administered by federal entities within each state as of Feb. 20, is currently used.
+* `peopleVaccinated`: Cumulative number of a state's residents who’ve received at least one dose; prior to Feb. 20, this refers to people who were vaccinated in a state, regardless of residency. (Note: if higher than the CDC number prior to Feb. 20, state-reported data is used.)
+* `completedVaccination`: Cumulative number of a state's residents who’ve been fully vaccinated; prior to Feb. 20, this refers to people who were fully vaccinated in a state, regardless of residency. (Note: if higher than the CDC number prior to Feb. 20, state-reported data is used, and the first-approved vaccines require two doses for full vaccination or “series completion”.)
 * `cdcDosesDistributed`: Cumulative number of vaccine doses delivered, according to the CDC. (Data for New York City is as reported by the city.)
-* `cdcDosesAdministered`: Cumulative number of doses administered, as reported by the CDC. (Note: CDC data is delayed for some states. For the most up-to-date data prior to Feb. 20, use `dosesAdministered`)
+* `cdcDosesAdministered`: Cumulative number of doses administered, as reported by the CDC, which includes locally-administered doses by federal entities as of Feb. 20. (Note: CDC data is delayed for some states, so for the most up-to-date data prior to Feb. 20, use `dosesAdministered`.)
 * `stateReportedDosesAdministered`: Cumulative number of doses administered, as reported by states. (Note: we do not collect this figure for every state; for the most comprehensive data, use `dosesAdministered`.)
 
 [historical-global-doses-administered.csv](data/historical-global-doses-administered.csv) – Cumulative number of doses administered by country
@@ -49,7 +49,7 @@ These comma-separated values (CSV) files are available for download, with the fo
 
 * `id`: Postal abbreviations for states, territories and vaccination jurisdictions (full list available [here](https://faq.usps.com/s/article/What-are-the-USPS-abbreviations-for-U-S-states-and-territories)). Cities and federal entities are given non-standard identifiers, e.g. “new-york-city”.
 * `date`: Date on which new datapoint was recorded by Bloomberg. (Note: all areas are checked daily, but depending on when the source is updated it may have been recorded with a day or more of lag.)
-* `value`: Total number of doses administered (e.g. `dosesAdministered`) as recorded on that date
+* `value`: Total number of doses administered (e.g. `dosesAdministered`) as recorded on that date. Starting on Feb. 20, this is the CDC number for doses administered, including by any federal entities in a given state; prior to that, this was the higher of of the state-reported or CDC-reported figure and excluded federal entities.
 
 ## Country Notes
 
@@ -57,4 +57,4 @@ These comma-separated values (CSV) files are available for download, with the fo
 * Canada: National figures are calculated as the sum of province and territory level data, rather than directly reported.
 * Russia: Only reports the number of people who have received at least one dose; it doesn’t break down the total number of doses administered, which would be higher.
 * U.K.: National figures are calculated as the sum of country-level data, rather than directly reported. Crown dependencies and British Overseas Territories are excluded from U.K.’s total.
-* U.S.: Prior to Feb. 20, national figures are calculated as the sum of states, the District of Columbia, territories, federal agencies and the Pacific Island nations that are covered by the U.S. vaccination drive (Marshall Islands, Micronesia, Palau). Starting Feb. 20, the number reported by the CDC is used.
+* U.S.: Prior to Feb. 20, national figures are calculated as the sum of states, the District of Columbia, territories, federal agencies and the Pacific Island nations that are covered by the U.S. vaccination drive (Marshall Islands, Micronesia, Palau). Starting Feb. 20, the numbers reported by the CDC are used.
