@@ -36,8 +36,6 @@ These comma-separated values (CSV) files are available for download, with the fo
 * `peopleVaccinated`: Cumulative number of a state's residents who’ve received at least one dose; prior to Feb. 20, this refers to people who were vaccinated in a state, regardless of residency. (Note: if higher than the CDC number prior to Feb. 20, state-reported data is used.)
 * `completedVaccination`: Cumulative number of a state's residents who’ve been fully vaccinated; prior to Feb. 20, this refers to people who were fully vaccinated in a state, regardless of residency. (Note: if higher than the CDC number prior to Feb. 20, state-reported data is used, and the first-approved vaccines require two doses for full vaccination or “series completion”.)
 * `cdcDosesDistributed`: Cumulative number of vaccine doses delivered, according to the CDC. (Data for New York City is as reported by the city.)
-* `cdcDosesAdministered`: Cumulative number of doses administered, as reported by the CDC, which includes locally-administered doses by federal entities as of Feb. 20. (Note: CDC data is delayed for some states, so for the most up-to-date data prior to Feb. 20, use `dosesAdministered`.)
-* `stateReportedDosesAdministered`: Cumulative number of doses administered, as reported by states. (Note: we paused collection of this data as of March 5; we did not collect this figure for every state; for the most comprehensive data, use `dosesAdministered`.)
 
 [historical-global-doses-administered.csv](data/historical-global-doses-administered.csv) – Cumulative number of doses administered by country
 
