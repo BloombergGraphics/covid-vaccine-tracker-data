@@ -25,7 +25,8 @@ These comma-separated values (CSV) files are available for download, with the fo
 * `name`: Jurisdiction name in Bloomberg style.
 * `dosesAdministered`: Cumulative number of vaccine doses administered.
 * `peopleVaccinated`: Cumulative number of people who’ve received at least one dose.
-* `completedVaccination`: Cumulative number of people who’ve been fully vaccinated (note: the first-approved vaccines require two doses for full vaccination or “series completion”, later vaccines may require only one dose).
+* `completedVaccination`: Cumulative number of people who’ve been fully vaccinated with either a single- or two-dose vaccine.
+* `completedOneDoseVaccination`: Cumulative number of people who’ve been fully vaccinated with a single-dose vaccine.
 
 [current-usa.csv](data/current-usa.csv) – Snapshot of the latest U.S. update to the Bloomberg Covid-19 Vaccine Tracker
 
@@ -34,7 +35,8 @@ These comma-separated values (CSV) files are available for download, with the fo
 * `name`: State, territory, city or vaccination jurisdiction name.
 * `dosesAdministered`: Cumulative number of doses administered in a state, regardless of residency. This is the administration data published on our website. Prior to Feb. 20, it includes the most up-to-date figures drawn from the CDC and from state-run dashboards—whichever value is higher; CDC data, which includes doses administered by federal entities within each state as of Feb. 20, is currently used.
 * `peopleVaccinated`: Cumulative number of a state's residents who’ve received at least one dose; prior to Feb. 20, this refers to people who were vaccinated in a state, regardless of residency. (Note: if higher than the CDC number prior to Feb. 20, state-reported data is used.)
-* `completedVaccination`: Cumulative number of a state's residents who’ve been fully vaccinated; prior to Feb. 20, this refers to people who were fully vaccinated in a state, regardless of residency. (Note: if higher than the CDC number prior to Feb. 20, state-reported data is used, and the first-approved vaccines require two doses for full vaccination or “series completion”.)
+* `completedVaccination`: Cumulative number of a state's residents who’ve been fully vaccinated with either a single- or two-dose vaccine; prior to Feb. 20, this refers to people who were fully vaccinated in a state, regardless of residency. (Note: if higher than the CDC number prior to Feb. 20, state-reported data is used.)
+* `completedOneDoseVaccination`: Cumulative number of a state's residents who’ve been fully vaccinated with a single-dose vaccine.
 * `cdcDosesDistributed`: Cumulative number of vaccine doses delivered, according to the CDC. (Data for New York City is as reported by the city.)
 
 [historical-global-doses-administered.csv](data/historical-global-doses-administered.csv) – Cumulative number of doses administered by country
