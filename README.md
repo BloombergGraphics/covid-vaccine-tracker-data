@@ -21,22 +21,24 @@ These comma-separated values (CSV) files are available for download, with the fo
 [current-global.csv](data/current-global.csv) – Snapshot of the latest global update to the Bloomberg Covid-19 Vaccine Tracker
 
 * `id`: ISO 3166-1 alpha-3 country code (full list available [here](https://unstats.un.org/unsd/tradekb/knowledgebase/country-code)). Subdivisions are also standard ISO codes (ISO 3166-2 alpha-2 or alpha-3), unless otherwise specified. London’s (GBR-LON) is a non-standard code.
-* `population`: 2019 national population figure from the International Monetary Fund [October 2020 World Economic Outlook](https://www.imf.org/en/Publications/WEO/weo-database/2020/October).
 * `name`: Jurisdiction name in Bloomberg style.
+* `population`: 2019 national population figure from the International Monetary Fund [October 2020 World Economic Outlook](https://www.imf.org/en/Publications/WEO/weo-database/2020/October).
 * `dosesAdministered`: Cumulative number of vaccine doses administered.
 * `peopleVaccinated`: Cumulative number of people who’ve received at least one dose.
-* `completedVaccination`: Cumulative number of people who’ve been fully vaccinated with either a single- or two-dose vaccine.
+* `completedVaccination`: Cumulative number of people who’ve been fully vaccinated with either a single-, two- or three-dose vaccine.
 * `completedOneDoseVaccination`: Cumulative number of people who’ve been fully vaccinated with a single-dose vaccine.
+* `noBoosterTotal`: Cumulative number of additional doses administered to people who've already been fully vaccinated with either a single-, two- or three-dose vaccine.
 
 [current-usa.csv](data/current-usa.csv) – Snapshot of the latest U.S. update to the Bloomberg Covid-19 Vaccine Tracker
 
 * `id`: Postal abbreviations for states, territories and vaccination jurisdictions (full list available [here](https://faq.usps.com/s/article/What-are-the-USPS-abbreviations-for-U-S-states-and-territories)). Cities and federal entities are given non-standard identifiers, e.g. “new-york-city”.
-* `population`: Population estimates as of July 1, 2019 from the [U.S. Census](https://www.census.gov/data/tables/time-series/demo/popest/2010s-state-total.html) for the U.S. and Puerto Rico. 2018 U.S. Census Bureau estimates and estimates from the CIA Factbook are used for other U.S. territories and Micronesia, Palau and the Marshall Islands.
 * `name`: State, territory, city or vaccination jurisdiction name.
+* `population`: Population estimates as of July 1, 2019 from the [U.S. Census](https://www.census.gov/data/tables/time-series/demo/popest/2010s-state-total.html) for the U.S. and Puerto Rico. 2018 U.S. Census Bureau estimates and estimates from the CIA Factbook are used for other U.S. territories and Micronesia, Palau and the Marshall Islands.
 * `dosesAdministered`: Cumulative number of doses administered in a state, regardless of residency. This is the administration data published on our website. Prior to Feb. 20, it includes the most up-to-date figures drawn from the CDC and from state-run dashboards—whichever value is higher; CDC data, which includes doses administered by federal entities within each state as of Feb. 20, is currently used.
 * `peopleVaccinated`: Cumulative number of a state's residents who’ve received at least one dose; prior to Feb. 20, this refers to people who were vaccinated in a state, regardless of residency. (Note: if higher than the CDC number prior to Feb. 20, state-reported data is used.)
 * `completedVaccination`: Cumulative number of a state's residents who’ve been fully vaccinated with either a single- or two-dose vaccine; prior to Feb. 20, this refers to people who were fully vaccinated in a state, regardless of residency. (Note: if higher than the CDC number prior to Feb. 20, state-reported data is used.)
 * `completedOneDoseVaccination`: Cumulative number of a state's residents who’ve been fully vaccinated with a single-dose vaccine.
+* `noBoosterTotal`: Cumulative number of additional doses administered to people who've already been fully vaccinated with either a single- or two-dose vaccine.
 * `cdcDosesDistributed`: Cumulative number of vaccine doses delivered, according to the CDC. (Data for New York City is as reported by the city.)
 
 [historical-global-doses-administered.csv](data/historical-global-doses-administered.csv) – Cumulative number of doses administered by country
