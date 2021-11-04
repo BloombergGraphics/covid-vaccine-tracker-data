@@ -26,8 +26,7 @@ These comma-separated values (CSV) files are available for download, with the fo
 * `dosesAdministered`: Cumulative number of vaccine doses administered.
 * `peopleVaccinated`: Cumulative number of people who’ve received at least one dose.
 * `completedVaccination`: Cumulative number of people who’ve been fully vaccinated with either a single-, two- or three-dose vaccine.
-* `completedOneDoseVaccination`: Cumulative number of people who’ve been fully vaccinated with a single-dose vaccine.
-* `noBoosterTotal`: Cumulative number of additional doses administered to people who've already been fully vaccinated with either a single-, two- or three-dose vaccine.
+* `boosterDosesAdministered`: Cumulative number of additional doses administered to people who've already been fully vaccinated with either a single-, two- or three-dose vaccine.
 
 [current-usa.csv](data/current-usa.csv) – Snapshot of the latest U.S. update to the Bloomberg Covid-19 Vaccine Tracker
 
@@ -38,7 +37,7 @@ These comma-separated values (CSV) files are available for download, with the fo
 * `peopleVaccinated`: Cumulative number of a state's residents who’ve received at least one dose; prior to Feb. 20, this refers to people who were vaccinated in a state, regardless of residency. (Note: if higher than the CDC number prior to Feb. 20, state-reported data is used.)
 * `completedVaccination`: Cumulative number of a state's residents who’ve been fully vaccinated with either a single- or two-dose vaccine; prior to Feb. 20, this refers to people who were fully vaccinated in a state, regardless of residency. (Note: if higher than the CDC number prior to Feb. 20, state-reported data is used.)
 * `completedOneDoseVaccination`: Cumulative number of a state's residents who’ve been fully vaccinated with a single-dose vaccine.
-* `noBoosterTotal`: Cumulative number of additional doses administered to people who've already been fully vaccinated with either a single- or two-dose vaccine.
+* `boosterDosesAdministered`: Cumulative number of additional doses administered to people who've already been fully vaccinated with either a single- or two-dose vaccine.
 * `cdcDosesDistributed`: Cumulative number of vaccine doses delivered, according to the CDC. (Data for New York City is as reported by the city.)
 
 [historical-global-doses-administered.csv](data/historical-global-doses-administered.csv) – Cumulative number of doses administered by country
