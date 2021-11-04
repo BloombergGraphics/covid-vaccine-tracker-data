@@ -1,4 +1,4 @@
-id,population,name,cdcDosesDistributed,noBoosterTotal,completedOneDoseVaccination,completedVaccination,dosesAdministered,peopleVaccinated
+id,population,name,cdcDosesDistributed,boosterDosesAdministered,completedOneDoseVaccination,completedVaccination,dosesAdministered,peopleVaccinated
 AL,4903185,Alabama,7316580,239309,145386,2202285,4912357,2682405
 AK,731545,Alaska,1198225,59599,34171,385982,879430,436091
 AZ,7278717,Arizona,10927290,399903,292584,3876474,8870506,4469555
@@ -62,6 +62,6 @@ federal-entities,,Federal Entities,15100515,379188,504714,6406532,14300049,75643
 bureau-of-prisons,,Bureau of Prisons,272970,4295,12176,121518,241765,127691
 dept-of-defense,,Department of Defense,5617200,572,238679,2648701,6249148,3400591
 indian-health-service,,Indian Health Service,2272935,61628,33857,772171,1740810,932252
-new-york-city,8419316,New York City,14250245,,,5606277,12099996,6137439
+new-york-city,8419316,New York City,14363345,,,5614483,12113400,6145042
 unassigned,,Unassigned,,,,1399437,2442003,1889342
 veterans-health,,Veterans Health,6937410,312693,220002,2864142,6068326,3103786
