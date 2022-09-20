@@ -1,16 +1,18 @@
 # Bloomberg Covid-19 Vaccine Tracker Open Data
 
+_As of Oct. 5, 2022, the Bloomberg Vaccine Tracker and the GitHub repository will no longer be updated. For more information on this change, please see our blog post [here](https://www.bloomberg.com/news/articles/2022-09-20/bloomberg-vaccine-tracker-will-stop-data-updates-on-oct-5-2022)_
+
 ## Terms of Use
 
 By downloading the Dataset, you agree that you will attribute the Dataset and any use of the Dataset to Bloomberg. You may use the Dataset for personal or internal business purposes, and may make limited use of the Dataset in connection with the provision of other services to clients; provided that you may not monetize the Dataset or otherwise make commercial use of the Dataset where the Dataset constitutes all, or substantially all, of the commercial offering. The Dataset is provided “as-is” and without any express or implied warranties.
 
 ## Dataset Description
 
-[The Bloomberg Covid-19 Vaccine Tracker](https://www.bloomberg.com/graphics/covid-vaccine-tracker-global-distribution/) covers all U.S. states and territories as well as a growing number of countries internationally, on a daily basis. Vaccination data has been gathered from government websites, official statements and Bloomberg interviews, as well as third-party sources including the World Health Organization, Johns Hopkins University and Our World In Data. In the U.S., prior to Feb. 20, 2021 when local governments and the Centers for Disease Control and Prevention reported different totals for the same jurisdiction, Bloomberg used the higher number (unless there was a data quality concern). Starting on Feb. 20, 2021 CDC data is used exclusively for the U.S. due to methodological changes that disallow comparison with state-reported data. It may take several days for counts to be reported to databases.
+[The Bloomberg Covid-19 Vaccine Tracker](https://www.bloomberg.com/graphics/covid-vaccine-tracker-global-distribution/) covers all U.S. states and territories as well as a growing number of countries internationally. Vaccination data has been gathered from government websites, official statements and Bloomberg interviews, as well as third-party sources including the World Health Organization, Johns Hopkins University and Our World In Data. In the U.S., prior to Feb. 20, 2021 when local governments and the Centers for Disease Control and Prevention reported different totals for the same jurisdiction, Bloomberg used the higher number (unless there was a data quality concern). Starting on Feb. 20, 2021 CDC data is used exclusively for the U.S. due to methodological changes that disallow comparison with state-reported data.
 
 ## Updating
 
-The latest raw data will be pushed to this repository once a day.
+Raw data will be pushed to this repository once a day until Oct. 5, 2022, after which the data will no longer update.
 
 The file [UPDATED.txt](data/UPDATED.txt) indicates the time at which the data was last acquired from our data store.
 
